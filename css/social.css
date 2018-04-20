@@ -1,0 +1,50 @@
+.kSocialLinks {
+	line-height: 50px;
+}
+
+.kSocialLinks a {
+	display: inline-block;
+	color: #fafafa;
+	background: #27AE60;
+	position: relative;
+	text-indent: -9999px;
+	width: 24px;
+	line-height: 30px;
+	padding: 0px 10px;
+	border-radius: 3px;
+	transition: all .2s;
+}
+
+.kSocialLinks a:after {
+	content: "@";
+	font-family: 'glyph';
+	font-size: 24px;
+	text-indent: 0px;
+	color: #fafafa;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+
+.kSocialLinks a.shareFacebook { background-color: #2980b9; }
+.kSocialLinks a.shareGoogle { background-color: #d35400; }
+.kSocialLinks a.shareTwitter { background-color: #3daefd; }
+.kSocialLinks a.shareForum { background-color: #0068c6; }
+.kSocialLinks a.shareTelegram { background-color: #2ca5e0; }
+
+.kSocialLinks a.shareFacebook:hover { background-color: #3498db; }
+.kSocialLinks a.shareGoogle:hover { background-color: #f67400; }
+.kSocialLinks a.shareTwitter:hover { background-color: #70c3fe; }
+.kSocialLinks a.shareForum:hover { background-color: #1078d6; }
+.kSocialLinks a.shareTelegram:hover { background-color: #2ca5e0; }
+
+.kSocialLinks a.shareFacebook:after { content: "F"; }
+.kSocialLinks a.shareGoogle:after { content: "G"; }
+.kSocialLinks a.shareTwitter:after { content: "T"; }
+.kSocialLinks a.shareForum:after { content: "K"; }
+.kSocialLinks a.shareTelegram:after { content: "↗"; }
+
+
+

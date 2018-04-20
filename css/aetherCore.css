@@ -1,0 +1,613 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../Noto-Sans-regular/Noto-Sans-regular.html');
+  src: url('../Noto-Sans-regular/Noto-Sans-regulard41d.html?#iefix') format('embedded-opentype'),
+       local('Noto Sans'),
+       local('Noto-Sans-regular'),
+       url('../Noto-Sans-regular/Noto-Sans-regular-2.html') format('woff2'),
+       url('../Noto-Sans-regular/Noto-Sans-regular-3.html') format('woff'),
+       url('../Noto-Sans-regular/Noto-Sans-regular-4.html') format('truetype'),
+       url('../Noto-Sans-regular/Noto-Sans-regular-5.html#NotoSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../Noto-Sans-700/Noto-Sans-700.html');
+  src: url('../Noto-Sans-700/Noto-Sans-700d41d.html?#iefix') format('embedded-opentype'),
+       local('Noto Sans Bold'),
+       local('Noto-Sans-700'),
+       url('../Noto-Sans-700/Noto-Sans-701.html') format('woff2'),
+       url('../Noto-Sans-700/Noto-Sans-702.html') format('woff'),
+       url('../Noto-Sans-700/Noto-Sans-703.html') format('truetype'),
+       url('../Noto-Sans-700/Noto-Sans-704.html#NotoSans') format('svg');
+}
+
+body {
+	padding: 0px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+	color: #31363b;
+}
+
+header {
+	position: relative;
+}
+
+header > * {
+	padding: 0px !important;
+	margin: 0px auto !important;
+	max-width: 1140px !important;
+}
+
+p {
+	margin: 0px;
+}
+
+p + p {
+	margin-top: 5px;
+}
+
+a {
+	text-decoration: none !important;
+	color: #3b85b5;
+}
+
+/*
+a:visited {
+	color: #7cbcec;
+}
+*/
+
+a:hover {
+	color: #3daefd;
+}
+
+main h1 {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+main h2 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+main h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+main h4 {
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #536161;
+	margin: 0px;
+	margin-top: 20px;
+}
+
+.learn-more:after {
+	content: ">";
+	font-family: "glyph";
+	font-size: 80%;
+	font-weight: bold !important;
+	vertical-align: middle;
+	padding-left: 1em;
+}
+
+.learn-more {
+	display: inline-block;
+}
+
+a.button {
+	position: relative;
+	display: inline-block;
+	background-color: #54a3d8;
+	color: #fcfcfc;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: solid 1px rgba(0,0,0,.1);
+	transition: background-color .2s;
+}
+
+a.button:hover {
+	background-color: #7cbcec;
+}
+
+a.button.expand {
+	display: block;
+	padding-right: 20px;
+}
+
+a.button:after {
+	color: #fcfcfc
+}
+
+a.button.expand:after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -.8ex;
+}
+
+@media (max-width: 768px) {
+	a.button {
+		display: block;
+		padding-right: 20px;
+	}
+	
+	a.button:after {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		margin-top: -.8ex;
+	}
+
+}
+
+#KGlobalLogo {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	min-width: 50px !important;
+
+	text-indent: -999px;
+
+	margin: 0px;
+	padding: 0px !important;
+}
+
+
+
+#KGlobalLogo:before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 42px;
+	margin-left: -21px;
+
+	content: "K";
+
+	color: #4d4d4d;
+	font-family: "glyph";
+	font-size: 32px;
+	font-weight: normal;
+	text-indent: 0px;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	text-decoration: none !important;
+}
+
+#kHeaderNav {
+	border-bottom: solid 1px #EFF1F1;
+}
+
+#kHeaderNav a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 20px;
+	color: #334545;
+}
+
+#kHeaderNav a.active {
+	background-color: #54a3d8;
+	color: #FFF;
+	/*text-shadow: 0px 0px 1px #375a7d;*/
+}
+#kHeaderNav a.active:before {
+	color: #FFF;
+}
+#kHeaderNav a.active:hover {
+	color: #FFF;
+}
+
+#kHeaderNav button {
+	outline: 0;
+}
+/*
+#kHeaderNav .navbar-collapse a {
+	background-color: #EFF1F1;
+}
+#kHeaderNav .collapse.show a:hover {
+	background-color: #FFF;
+}
+*/
+
+#kHeaderNav a:hover {
+	color: #3daefd;
+}
+
+.navbar-toggler {
+	height: 50px;
+}
+
+.navbar-toggler:before
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 42px;
+	margin-left: -21px;
+
+	content: "=";
+
+	color: #4d4d4d;
+	font-family: "glyph";
+	font-size: 22px;
+	font-weight: normal;
+	text-indent: 0px;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	text-decoration: none !important;
+}
+
+
+main section {
+	margin-top: 40px;
+}
+
+
+
+#kFooter section {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#kSocial {
+
+	border-top: solid 1px #cfd5d5;
+
+}
+
+#kPatrons h3, #kLinks h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+}
+
+
+
+#kPatrons a, #kPatrons span {
+	text-align: center;
+	padding: 0px 20px;
+	display: block;
+	
+	min-width: 200px;
+}
+
+
+#kPatrons img {
+	width: 100%;
+	max-width: 300px;
+}
+
+#kLinks {
+	padding-top: 30px !important;
+	padding-bottom: 40px !important;
+}
+
+#kLinks a {
+	display: inline;
+}
+
+#kLinks nav {
+	max-width: 200px;
+}
+
+
+#kLinks a:after { content: ' '; display: block; } 
+
+#donateAmountField, #donateSubmit, #kMetaStore .button {
+	border: solid 1px rgba(0,0,0,.2);
+	background-color: #FAFAFA;
+	padding: 5px 10px;
+	border-radius: 2px;
+	background-clip: padding-box;
+	position: relative;
+	color: #333;
+}
+
+#donateSubmit, #kMetaStore .button {
+	cursor: pointer;
+}
+
+#donateAmountField:focus, #kMetaStore .button:focus {
+	border-color: #7cbcec;
+	background-color: #FFF;
+}
+
+#donateSubmit:hover,  #kMetaStore .button:hover {
+	background-color: #FFF;
+}
+
+#donateSubmit:active,  #kMetaStore .button:active {
+	background-color: #EEE;
+	top: 1px;
+}
+
+#kLegal small {
+min-width: 300px;
+}
+
+#kLegal {
+	color: #6f8181;
+}
+
+footer {
+	background-color: #EFF1F1;
+	position: relative;
+	padding-top: 2px;
+	font-size: 12px;
+}
+
+
+#headerCarousel {
+	margin-bottom: 20px;
+	height: 700px;
+}
+
+
+@media (max-width: 1700px) {
+	#headerCarousel {
+		height: 600px;
+	}
+}
+
+@media (max-width: 1140px) {
+	#headerCarousel {
+		height: 500px;
+	}
+}
+
+@media (max-width: 800px) {
+	#headerCarousel {
+		height: 400px;
+	}
+}
+
+
+#headerCarousel .carousel-inner {
+	width: 100%;
+	height: 100%;
+}
+
+#headerCarousel .carousel-item.dark-text {
+	color: #333; 
+	text-shadow: none;
+}
+
+
+#headerCarousel .carousel-item {
+	color: #EEE; 
+	text-shadow: 0px 1px 2px rgba(0,0,0,.6);
+	
+	top: 0px !important;
+
+	width: 100%;
+	height: 100%;
+	
+	padding: 40px 50px;
+}
+
+#headerCarousel .carousel-item > h1 {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+
+#headerCarousel .carousel-item .alignBottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
+	padding: 40px 50px;
+	
+	text-align: center;
+}
+
+#headerCarousel .carousel-control-prev, #headerCarousel .carousel-control-next {
+	top: 50%;
+	width: 30px;
+	height: 100px;
+	margin-top: -50px;
+	
+	background-color: #FAFAFA;
+	opacity: 1;
+	
+	font-family: "glyph";
+	
+	color: #333;
+	padding: 0px;
+	transition: width .2s;
+}
+
+#headerCarousel .carousel-control-prev:hover, #headerCarousel .carousel-control-next:hover {
+	width: 50px;
+}
+
+#headerCarousel .carousel-control-prev:before {
+	content: "<";
+	width: 100%;
+	text-align: center;
+}
+
+#headerCarousel .carousel-control-next:before {
+	content: ">";
+	width: 100%;
+	text-align: center;
+}
+
+#headerCarousel .carousel-control-prev {
+	border-right: solid 2px #3daefd;
+}
+
+#headerCarousel .carousel-control-next {
+	border-left: solid 2px #3daefd;
+}
+
+
+#kSocial {
+	text-align: right;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+#kSocial a {
+	padding: 0px 20px;
+	text-indent: -9999px;
+	text-align: left;
+}
+
+#kSocial a:after {
+	text-align: center;
+}
+
+#kFooterIncome {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	background-color: #abf9c7;
+	border: solid 1px #7ceca4;
+	border-radius: 2px;
+	margin-top: 10px;
+	padding: 0px !important;
+}
+
+#kDonateForm, #kMetaStore {
+	padding: 20px;
+	margin: 0px;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#kDonateForm {
+	border-right: solid 1px #7ceca4;
+}
+
+#kFooterIncome .center {
+	text-align: center;
+	width: 100%;
+}
+
+#kMetaStore .button {
+	width: auto !important;
+	display: inline-block !important;
+}
+
+@media (max-width: 768px) {
+	#kFooterIncome {
+		flex-direction: column;
+	}
+	#kDonateForm, #kMetaStore {
+		width: 100%;
+	}
+	
+	#kDonateForm {
+		border-right: none;
+		border-bottom: solid 1px #7ceca4;
+	}
+}
+
+#kFooterIncome h3 {
+	font-size: 14px;
+	color: #377d50;
+	padding: 0px 0px 10px;
+	margin: 0px;
+}
+
+#kFooterIncome h3 a {
+	color: auto;
+	font-weight: normal;
+	margin-left: 20px;
+}
+#kDonateForm h3 a:before {
+	content: "( ";
+	color: #377d50;
+}
+#kDonateForm h3 a:after {
+	content: " )";
+	color: #377d50;
+}
+
+#kFooterIncome p {
+	margin-bottom: 10px;
+}
+
+header:after {
+	bottom: 0px;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAFCAYAAACzSkmrAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACkSURBVDiN7dExDsIwDEbh9we1soXE6eCEbJyInQNwgKgxQ9WWFrIShr7ZkewvYm/V5fbwLj8NoKTec0lGzp66ZAzJS8jQ4EKG5KLY+FIeYBAOMoRHyFC4YJwpcqVixGYWnHHG1ebs700YHxBAHWM6DqoYHxBvswvGEegbnL1q/pAqxgQB1DE2EEAdY4aABeMEHH57+n+m8/UerZfYW0qtF9hb9wI2bU03vw4M8QAAAABJRU5ErkJggg==");
+
+}
+
+footer:before
+ {
+	top: 0px;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAFCAYAAACzSkmrAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADOSURBVDiN7ZExTsRQDESfHSJqWq7AKfYOiAtScgmOwQno0CqKIlt/Iw8NYZVF25IU+yoXLmbe2PPrh7ixG3zrADfW3G0dYIckEOtbCRYGiSlUnrhCkMgCwEyJLn5RCE+kABBK1IWbkq6iTpX0ffRe6dXi1D/k3gZZZKxEAFyTcRYB12RcigD4K6Ob3l6e2ka9f1kGGYACJqCdRWg2YwQQdgSgGGU2g36K04DJoEADAOaDSiVsQtYWEXP57G4jwD15BPh8/BrfD4f5P0vvmW/7cKBf79wHGwAAAABJRU5ErkJggg==");
+
+}
+
+header:after, footer:before {
+	content: "";
+	display: block !important;
+	background-size: 100% 5px;
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	left: 0px;
+}
+
+#cookieWarning {
+	display:none;
+	border-top: solid 1px #ffc169;
+	background-color: #ffdaa5;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 10px 20px;
+	z-index: 999;
+	color: #884d2c;
+}
+
+
+#cookieWarning button {
+	float: right;
+	border: solid 1px #ffc169;
+	border-radius: 2px;
+	background-color: #fff3e1;
+	color: #884d2c;
+	padding: 10px 20px;
+}
+
+main:after {
+	content: "";
+	display: block !important;
+	height: 40px;
+	margin: 40px 10px 10px 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: contain;
+	
+	background-image: url("data:image/svg+xml;utf8,<svg width='100' height='70' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 100 70'><g fill-rule='evenodd' transform='translate(0 -982)'><path fill='%23ffa92d' d='m53.7 1e3 0.656-2.62-2.53-2.72 0.562 6.75z'/><path fill='%23f58273' d='m74.1 1.02e3s3.37 4.03 8.44 2.16c5.06-1.88 11.6-4.22 11.6-4.22s-1.97-1.03-4.12-2.72c-2.16-1.69-4.69-1.22-4.69-1.22s2.44-1.31 3.19-4.88c0.75-3.56 0.844-8.25 0.844-8.25s-14.5 9.84-15.3 19.1z'/><path d='m84.8 992c0.802-1.87 3.71-6.56-0.421-5.95-2.6 1.68-2.9 5.16-3.52 7.94-0.143 1.09-3.16-2.93-4.11 0.079-0.593 1.67 2.34 3.51 0.538 5.59-0.517 1.63-1.11 3.25-2.81 1.67-6.14-2.92-13.9-4.76-20.1-1.07-6.23 3.76-10.3 11.8-7.94 19 2.53 4.67 8.59 7.12 13.7 5.68-1.12 1.04 0.0138 3.82-1.49 1.64-2.31-1.14 0.602 3.17-1.45 1.29-2.62-0.896-0.566 2.57 0.91 2.71-1.61 4.03 6.66-1.4 3 2.28-2.06 2.78-4.67 5.3-5.87 8.6 0.358 1.69-2.61 5.71 1.07 4.64 3.23-0.762 6.21-2.43 9.5-1.17 2.85 0.226 5.75 0.346 8.58-0.11 2.1 2.4 5.36 3.31 7.31 5.85 2.63 1.62 0.965-3.78 0.985-5.22-0.634-2.13-0.789-3.62 1.82-3.73 3.74-1.29 4.4-5.6 6.84-8.23 1.97-2.9 5.56-3.58 8.36-5.31-1.31-2.27-5.93-1.17-8.43-0.78-4.15 0.788-7.96 2.72-12 3.82-3.77 1.47-5.8-2.3-4.14-5.35 0.638-3.29 1.14-6.61 1.61-9.93 3.64-4.43 7.46-8.73 10.8-13.4 1.52-2.85 1.04-6.77-1.08-9.19-0.509-0.518-1.08-0.975-1.7-1.35z' fill='%233bb566'/><path fill='%23f58273' d='m59.4 1.02e3s0.656 2.62 2.53 4.12 5.06 2.06 5.06 2.06 1.12-5.72 2.53-8.91 3.19-7.78 3.19-7.78-6.37 2.81-8.91 5.16c-2.53 2.34-4.41 5.34-4.41 5.34z'/><path fill='%23ffa92d' d='m70.1 1e3 -0.281-3.84 1.5-1.78 0.562 1.41 6.84-11.5-0.281 5.72-4.12 5.72 1.87 0.938-1.69 1.78-1.03-1.41-1.03 1.78v2.25s-0.75-0.094-1.59-0.281c-0.844-0.188-0.75-0.75-0.75-0.75z'/><path fill='%23ffafa5' d='m29.6 998 1.6-1.15-0.448-6.59 2.24 1.47 0.639 4.09 2.17-4.41 2.37 1.02-4.09 8.06z'/><path fill='%2354d883' d='m23.6 996c-4.93-0.0608-9.92 2.75-11.8 7.42-0.985 2.88-1.97 5.77-2.95 8.65 1.64 1.36 3.43 2.58 4.99 4.03 1.67 2.07 4.57 2.07 6.69 3.41 0.767 1.75-0.444 1.79-1.72 1.97-1.03 1.81 1.55 4.15-0.27 6.08-1.12 2.28-2.43 4.45-3.77 6.6-2.33-0.385-5.91-0.826-5.97-3.83 0.0172-1.85-0.915-5.38-2.79-2.54-2.53 2.75-4.01 7.34-1.53 10.6 1.93 2.56 5.03 5.06 8.43 4.22 0.28 2.44-1.32 4.7-0.754 7.09 1.96 2.43 4.67-1.56 6.34-2.77 1.75-1.22 2.6-3.62 4.64-4.32 2.31-0.463 4.98-0.53 7.11 0.395 1.34 2.17 2.92 4.86 5.65 5.34 3.63-0.144-0.691-3.52-0.351-5.4-0.21-2.56-0.666-5.08-1.09-7.61 1.3-0.095-0.271-2.17 1.17-1.81 2 0.408 4.59-2.72 1.53-3.18-2.21-0.568-4.21-1.08-6.48-1.71-2.84-1.04-0.064-5.2-3.07-5.96-0.926-2 1.24-2.88 2.79-3.14 3.65-1.48 7.72-3.47 9.26-7.35 1.09-3.67-0.925-7.45-3.22-10.2-3.16-3.69-7.92-6.08-12.8-5.95z'/><path d='m28.2 1.03e3 1.21-0.576s0.575 1.85 2.49 1.21c1.92-0.639 3.01-1.41 3.01-1.41s1.6 3.07-0.128 4.99-2.75 2.17-2.75 2.17c-1.77-1.57-3.25-3.47-3.84-6.39z' fill='%23ffe5e1'/><path d='m20.5 1.02e3s0.64 1.28 0.32 2.37-1.98 2.37-1.98 2.37-0.896 2.94-2.62 5.37c-0.864 1.22-2 1.41-3.1 1.54-1.02-1.89-2.26-0.822-3.56 0.294 0.234 0.311 0.485 0.579 0.754 0.804-0.0147 0.019-0.0318 0.032-0.0462 0.052-1.41 1.92 3.13 2.56 3.13 2.56s0.575-1.73 5.31-0.96c4.73 0.767 6.33 3.9 12.4 4.35 6.07 0.448 6.33-3.13 6.33-3.13s-2.37-0.895-6.27-5.37-3.39-9.08-3.39-9.08l-7.29-1.15zm-12.5 8.44c-0.292 0.993-0.115 1.86 0.915 2.52 1.51-1.98 0.325-2.24-0.915-2.52z' fill='%23ffafa5'/><path fill='%23ffafa5' d='m14.9 1e3 -3.45-5.05 5.44-4.48-1.85-2.62-5.56 4.73-0.192-5.5-2.94 0.384s1.15 4.67 0.256 7.23c-0.895 2.56-2.37 5.12-2.37 5.12l2.3 1.41 2.94-4.8 3.01 6.52s0.831-0.384 1.66-1.34c0.831-0.959 0.767-1.6 0.767-1.6z'/><path d='m11.9 1e3 -2.08 1.81s-0.904-2.71-1.09-4.16c-0.181-1.45-0.181-3.89-1.72-3.53-1.54 0.362-0.995 6.96-0.995 6.96s-1.45 0.723-2.35-2.08c-0.904-2.8-2.89-3.07-2.44-0.362 0.452 2.71 1.9 4.34 1.9 4.34s-1.36 0.904-1.36 1.99-0.181 1.81-0.181 1.81-0.814 1.18-0.452 2.44c0.362 1.27 2.98 2.98 3.44 2.89 0.452-0.09 1.09 1.54 2.62 2.17 1.54 0.633 3.17 4.43 3.17 4.43l2.53-0.452 1.27-2.89-0.452-2.8z' fill='%2354d883'/><path fill='%23ffe5e1' d='m18.9 1.02e3s0.767 1.21 0.703 2.37c-0.064 1.15-1.09 2.56-1.09 2.56s-5.05 1.28-7.93 0.064c-2.88-1.21-6.2-4.99-4.09-7.16s6.84-4.73 7.93-2.81 1.02 5.95 2.24 5.75c1.21-0.192 2.24-0.767 2.24-0.767z'/></g></svg>");
+
+}
+
+
+

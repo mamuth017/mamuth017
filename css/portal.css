@@ -1,0 +1,110 @@
+
+#headerCarousel h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#slide-kirigami {
+	background-image: url(kirigami.jpg); 
+	background-position: center; 
+	background-size: cover; 
+}
+
+#slide-plasma-5-12 {
+	background-image: url(plasma-5-12-lts-logo.jpg); 
+	background-position: center; 
+	background-size: cover; 
+}
+
+#slide-the-game {
+	background-image: url(the-game.jpg); 
+	background-position: top center; 
+	background-size: cover;
+}
+
+#slide-plasma-5-9 {
+	background-image: url(plasma-5-9.jpg); 
+	background-position: center; 
+	background-size: cover;
+}
+
+#slide-kde-laptop {
+	background-image: url(slimbook.jpg); 
+	background-color: #FFF; 
+	background-size: cover;
+	background-position: bottom center; 
+	background-repeat: no-repeat;
+}
+
+#slide-randa-campaign {
+	background-image: url(randa-fundraiser.jpg);
+	background-color: #FFF;
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+
+
+#kWelcome {
+	font-size: 14px;
+	border-radius: 2px;
+	border: solid 1px #abdaf9;
+	background-color: #e1f2ff;
+	color: #375a7d;
+	padding: 10px 20px !important;
+	
+	margin: 10px auto !important;
+}
+
+@media (max-width: 1140px) {
+#kWelcome {
+	margin: 10px 10px !important;
+}
+}
+
+
+#announcement-feed ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#announcement-feed li:first-child h1 {
+	margin-top: 0px;
+}
+
+#announcement-feed h1 {
+	font-size: inherit;
+	font-weight: bold;
+}
+
+#announcement-feed h1 i {
+	color: #b0b8b8;
+	font-size: 90%;
+	font-weight: normal;
+}
+
+#announcement-feed q {
+	display: block;
+}
+
+
+#announcement-feed li + li {
+	margin-top: 20px;
+}
+
+#announcement-feed > a {
+	margin-top: 20px;
+	font-weight: normal;
+	display: inline-block;
+}
+
+.light-text h1 {
+	color: #EEE;
+}
+
+.light-text a {
+	color: #abdaf9;
+}

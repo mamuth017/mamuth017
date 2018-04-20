@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'glyph';
+	src:url('glyph/glyph87b7.eot?d1eayo');
+	src:url('glyph/glyph87b7.eot?d1eayo#iefix') format('embedded-opentype'),
+		url('glyph/glyph87b7.html?d1eayo') format('truetype'),
+		url('glyph/glyph87b7.woff?d1eayo') format('woff'),
+		url('glyph/glyph87b7.svg?d1eayo#glyph') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="glyph-"], [class*=" glyph-"] {
+	font-family: 'glyph';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.glyph-favorite:before {
+    content: "\e900";
+}
+.glyph-link:before {
+    content: "\6c";
+}
+.glyph-share-diaspora:before {
+    content: "\2a";
+}
+.glyph-share-facebook:before {
+    content: "\46";
+}
+.glyph-share-gplus:before {
+    content: "\47";
+}
+.glyph-share-reddit:before {
+    content: "\52";
+}
+.glyph-share-twitter:before {
+    content: "\54";
+}
+.glyph-share-ycombinator:before {
+    content: "\59";
+}
+.glyph-view-catalog:before {
+    content: "\e908";
+}
+.glyph-view-categories:before {
+    content: "\e909";
+}
+.glyph-view-fullscreen:before {
+    content: "\e90a";
+}
+.glyph-view-list-details:before {
+    content: "\e90b";
+}
+.glyph-view-list-icons:before {
+    content: "\e90c";
+}
+.glyph-view-list-text:before {
+    content: "\e90d";
+}
+.glyph-view-list-tree:before {
+    content: "\e90e";
+}
+.glyph-view-media-playlist:before {
+    content: "\e90f";
+}
+.glyph-window-new:before {
+    content: "\57";
+}
+.glyph-video:before {
+    content: "\56";
+}
+.glyph-cancel:before {
+    content: "\5c";
+}
+.glyph-check:before {
+    content: "\63";
+}
+.glyph-close:before {
+    content: "\58";
+}
+.glyph-logo-kde:before {
+    content: "\4b";
+}
+.glyph-logo-plasma:before {
+    content: "\50";
+}
+.glyph-logo-plasmamobile:before {
+    content: "\4d";
+}
+.glyph-clear:before {
+    content: "\78";
+}
+.glyph-go-down:before {
+    content: "\76";
+}
+.glyph-go-home:before {
+    content: "\48";
+}
+.glyph-go-next:before {
+    content: "\3e";
+}
+.glyph-go-previous:before {
+    content: "\3c";
+}
+.glyph-go-up:before {
+    content: "\5e";
+}
+.glyph-hamburger:before {
+    content: "\3d";
+}
+.glyph-info:before {
+    content: "\49";
+}
+.glyph-new-window:before {
+    content: "\77";
+}
+.glyph-search:before {
+    content: "\51";
+}
+.glyph-settings:before {
+    content: "\53";
+}
+.glyph-share:before {
+    content: "\73";
+}
+.glyph-share-telegram:before {
+  content: "\2197";
+}

@@ -1,0 +1,74 @@
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.blog-tags-container, .blog-categories-container {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+    margin-right: 20px;
+}
+
+.blog-post-title-archive {
+    margin: 5px auto;
+    font-size: 25px;
+}
+
+.blog-archive-title {
+    margin-bottom: 20px;
+}
+
+.blog-post-comments {
+    margin-top: 50px;
+}
+
+.widgets-list-unstyled {
+    margin: 0 auto 5px -40px;
+    list-style-type: none;
+}
+
+.article-entry .highlight {
+    background: #f7f7f9;
+    padding: 15px 20px;
+    overflow: auto;
+    line-height: 22.400000000000002px;
+}
+
+figure {
+    margin: 10px auto;
+}
+
+.article-entry img,
+.article-entry video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.article-entry .video-container {
+    position: relative;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.article-entry .video-container iframe, .article-entry .video-container object, .article-entry .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.article-entry .highlight table {
+    margin: 0;
+    width: auto;
+}
+
+.article-entry .highlight td {
+    border: none;
+    padding: 0;
+}
